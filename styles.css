@@ -20,7 +20,7 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: x-large;
 }
 
 #slider-container {
@@ -119,7 +119,6 @@ nav a {
 
 #main #products-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: olive;
     padding: 20px;
@@ -128,6 +127,10 @@ nav a {
 
 #main #products-image {
     width: 35%;
+}
+
+#main #products-image a {
+    display: block;  /* Damit der Link den gesamten Bildbereich abdeckt */
 }
 
 #main #products-image img {
@@ -140,7 +143,7 @@ nav a {
 
 #main #products-text {
     width: 60%;
-    margin-left: 20px; /* Hier wird ein Margin von 20px zum linken Rand hinzugefügt */
+    margin-left: 20px; /* Hier wird ein Margin für den Abstand zwischen Bild und Text hinzugefügt */
 }
 
 #main #products-text h2 {
@@ -148,7 +151,7 @@ nav a {
 }
 
 #main #products-text p {
-    font-size: 18px;
+    font-size: xx-large;
     color: #ccc;
 }
 
@@ -161,29 +164,19 @@ nav a {
     color: rgb(45, 44, 44);
 }
 
+
+
+
 #main #recipes-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: olive;
     padding: 20px;
     margin-top: 20px;
 }
 
-#main #recipes-image {
-    width: 60%;
-}
-
-#main #recipes-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin-top: 10px;
-}
-
 #main #recipes-text {
-    width: 35%;
+    width: 60%;
     margin-right: 20px; /* Hier wird ein Margin von 20px zum rechten Rand hinzugefügt */
 }
 
@@ -192,7 +185,7 @@ nav a {
 }
 
 #main #recipes-text p {
-    font-size: 18px;
+    font-size: xx-large;
     color: #ccc;
 }
 
@@ -203,4 +196,16 @@ nav a {
 
 #main #recipes-text a:hover {
     color: rgb(45, 44, 44);
+}
+
+#main #recipes-image {
+    width: 35%;
+}
+
+#main #recipes-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
 }
