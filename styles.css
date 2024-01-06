@@ -63,7 +63,7 @@ nav a {
     margin: 20px 0;
     color: #fff;
     opacity: 0.7;
-    font-size: 24px;
+    font-size: xx-large;
     transition: opacity 0.5s ease;
 }
 
@@ -87,6 +87,7 @@ nav a {
 
 #main #mushroom-image {
     width: 35%;
+    margin-right: 20px; /* Hier wird ein Margin von 20px zum rechten Rand hinzugefügt */
 }
 
 #main #mushroom-image img {
@@ -96,6 +97,7 @@ nav a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin-top: 10px;
 }
+
 
 #main #mushroom-text h2 {
     font-size: 36px;
@@ -113,4 +115,92 @@ nav a {
 
 #main #mushroom-text a:hover {
     color: rgb(45, 44, 44); /* Farbe bei Hover-Status ändern */
+}
+
+#main #products-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: olive;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#main #products-image {
+    width: 35%;
+}
+
+#main #products-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+#main #products-text {
+    width: 60%;
+    margin-left: 20px; /* Hier wird ein Margin von 20px zum linken Rand hinzugefügt */
+}
+
+#main #products-text h2 {
+    font-size: 36px;
+}
+
+#main #products-text p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+#main #products-text a {
+    color: black;
+    text-decoration: none;
+}
+
+#main #products-text a:hover {
+    color: rgb(45, 44, 44);
+}
+
+#main #recipes-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: olive;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#main #recipes-image {
+    width: 60%;
+}
+
+#main #recipes-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+#main #recipes-text {
+    width: 35%;
+    margin-right: 20px; /* Hier wird ein Margin von 20px zum rechten Rand hinzugefügt */
+}
+
+#main #recipes-text h2 {
+    font-size: 36px;
+}
+
+#main #recipes-text p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+#main #recipes-text a {
+    color: black;
+    text-decoration: none;
+}
+
+#main #recipes-text a:hover {
+    color: rgb(45, 44, 44);
 }
