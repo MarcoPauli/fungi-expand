@@ -39,24 +39,34 @@ nav a {
 #slider img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain; /* Anpassung der object-fit-Eigenschaft */
     display: none;
 }
+
+
 
 #slider img.active {
     display: block;
 }
 
-#prev, #next {
+#prev,
+#next {
     position: absolute;
     top: 50%;
-    font-size: 36px;
+    font-size: 80px; /* Hier wird die Schriftgröße erhöht */
     color: #fff;
     cursor: pointer;
+    z-index: 3; /* Damit die Pfeile über den Bildern liegen */
 }
 
-#prev { left: 10px; }
-#next { right: 10px; }
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
 
 #heading {
     text-align: center;
@@ -68,13 +78,14 @@ nav a {
 }
 
 #main {
-    background-color: olive;
+    background-image:linear-gradient( olive, rgb(91, 91, 1))
 }
 
 #main #mushroom-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 #main #mushroom-text {
@@ -120,7 +131,7 @@ nav a {
 #main #products-content {
     display: flex;
     align-items: center;
-    background-color: olive;
+    
     padding: 20px;
     margin-top: 20px;
 }
@@ -170,7 +181,7 @@ nav a {
 #main #recipes-content {
     display: flex;
     align-items: center;
-    background-color: olive;
+    
     padding: 20px;
     margin-top: 20px;
 }
@@ -208,4 +219,20 @@ nav a {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin-top: 10px;
+}
+/* Footer-Stile */
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: xx-large;
 }
